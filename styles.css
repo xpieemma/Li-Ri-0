@@ -1,0 +1,111 @@
+* { box-sizing: border-box; user-select: none; }
+body {
+    background: linear-gradient(145deg, #0a0f1e 0%, #03060c 100%); /* Dark blue gradient background */
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: 'Segoe UI', 'Fira Code', monospace; /* Monospace font for code-like feel */
+    margin: 0; /* Remove default margin */
+    padding: 2rem; /* Add padding */
+}
+.container {
+    background: rgba(12, 20, 30, 0.65);/* Semi-transparent background */
+    backdrop-filter: blur(4px);/* Blur effect */
+    border-radius: 2.5rem;/* Rounded corners */
+    padding: 1.5rem 2rem 2rem 2rem;/* Padding */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);/* Shadow */
+    border: 1px solid rgba(72, 187, 255, 0.25);/* Border */
+}
+h1 {
+    font-size: 1.9rem; /* Font size */
+    background: linear-gradient(135deg, #c0e0ff, #7aa9ff);/* Gradient text */
+    -webkit-background-clip: text;/* Clip text to background */
+    background-clip: text;/* Clip text to background */
+    color: transparent;/* Make text transparent */
+    margin: 0;/* Remove margin */
+}
+canvas {
+      display: block;/* Display as block */
+      margin: 0 auto;/* Center horizontally */
+    border-radius: 1.2rem;/* Rounded corners */
+    box-shadow: 0 12px 28px rgba(0,0,0,0.5);/* Shadow */
+    background: #010101;/* Background color */
+    cursor: crosshair;/* Cursor style */
+}
+.info-panel {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between;/* Space between items */
+    align-items: baseline;/* Align items to baseline */
+    gap: 1.5rem;/* Gap between items */
+    margin-top: 1.25rem;/* Margin top */
+    background: rgba(0,0,0,0.6);/* Background color */
+    padding: 0.8rem 1.4rem;/* Padding */
+    border-radius: 2rem;/* Rounded corners */
+    font-size: 0.85rem;/* Font size */
+    font-family: monospace;/* Monospace font */
+    color: #bcd0ff;/* Text color */
+    border: 1px solid rgba(100, 180, 250, 0.3);/* Border */
+}
+button {
+    background: #1e2a3a;/* Background color */
+    border: 1px solid #2c4c6c;/* Border */
+    color: #a0c4ff;/* Text color */
+    padding: 0.3rem 1rem;/* Padding */
+    border-radius: 2rem;/* Rounded corners */
+    cursor: pointer;/* Cursor style */
+    font-weight: bold;/* Font weight */
+    font-family: monospace;/* Monospace font */
+    letter-spacing: 0.5px;/* Letter spacing */
+    transition: all 0.2s ease;/* Transition */
+}
+button:hover { 
+    background: #2c3e50; /* Background color */
+    color: white;/* Text color */
+    border-color: #5f9eff;/* Border color */
+    transform: scale(0.97);/* Scale */
+}
+
+
+.slider-container {
+    display: flex;/* Display as flex */
+    align-items: center;/* Align items */
+    gap: 0.8rem;/* Gap between items */
+    background: #1e2a3a;/* Background color */
+    padding: 0.3rem 1rem;/* Padding */
+    border-radius: 2rem;/* Rounded corners */
+    border: 1px solid #2c4c6c;/* Border */
+    font-size: 0.75rem;/* Font size */
+    color: #a0c4ff;/* Text color */
+    font-family: monospace;/* Monospace font */
+    font-weight: bold;/* Font weight */
+}
+input[type=range] {
+    -webkit-appearance: none;/* Remove default styles */
+    width: 100px;/* Width */
+    background: transparent;/* Background color */
+    outline: none;/* Outline */
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;/* Width */
+    height: 4px;/* Height */
+    cursor: pointer;/* Cursor style */
+    background: #03060c;/* Background color */
+    border-radius: 2px;/* Rounded corners */
+    border: 1px solid #2c4c6c;/* Border */
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;/* Remove default styles */
+    height: 14px;/* Height */
+    width: 14px;/* Width */
+    border-radius: 50%;/* Rounded corners */
+    background: #7aa9ff;/* Background color */
+    cursor: pointer;/* Cursor style */
+    margin-top: -6px;/* Margin top */
+    box-shadow: 0 0 8px rgba(122, 169, 255, 0.8);/* Box shadow */
+    transition: transform 0.1s ease;/* Transition */
+}
+input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);/* Scale */
+    background: #c0e0ff;/* Background color */
+}

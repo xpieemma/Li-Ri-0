@@ -1,0 +1,6 @@
+curby-client
+numpy
+pandas
+scipy
+matplotlib
+

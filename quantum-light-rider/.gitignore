@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+backend/node_modules/
+
+# Python virtual environments
+venv/
+.venv/
+python/venv/
+
+# Local data or build captures
+data/*.csv
+frontend/captures/
+
+# OS generated files
+.DS_Store
+Thumbs.db

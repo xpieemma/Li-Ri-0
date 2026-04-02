@@ -13,3 +13,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+.bin
+install-pyenv-win.ps1
+python/install-pyenv-win.ps1
+venv/

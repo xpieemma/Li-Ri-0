@@ -1,0 +1,7 @@
+{
+  "round": "1",
+  "entropy_hex": "00112233445566778899aabbccddeeff",
+  "rows": 100,
+  "generated_with": "pure_entropy (seed from first 8 bytes)",
+  "copula": "Gaussian with predefined correlation matrix"
+}
